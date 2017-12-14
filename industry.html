@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Industry - Netzealous</title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+<!--glyphicon style-->
+<!--<link type="text/css" href="css/glyphicons.css" rel="stylesheet"/>-->
+<!--css animate-->
+<link type="text/css" href="css/animate.css" rel="stylesheet"/>
+<!--css hover effect-->
+<link type="text/css" href="css/hover.css" rel="stylesheet"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/html5shiv.js"></script>
+<![endif]-->
+<script type="text/javascript">
+	document.createElement("main");
+	document.createElement("header");
+	document.createElement("nav");
+	document.createElement("section");
+	document.createElement("article");
+	document.createElement("footer");
+</script>
+<!--dropdown menu effect start-->
+<script type="text/javascript">
+	$(document).ready(function() {
+    $( '.dropdown' ).hover(
+        function(){
+            $(this).children('.sub-menu').slideDown(200);
+        },
+        function(){
+            $(this).children('.sub-menu').slideUp(200);
+        }
+    );
+});
+</script>
+<!--dropdown menu effect end-->
+<!--Mobile/Tab menu script start-->
+<script type="text/javascript">
+$(document).ready( function(){
+
+    $('#trigger').click( function(event){
+        
+        event.stopPropagation();
+        
+        $('#drop').toggle();
+	});
+    
+   
+	$('#service_trigger').click( function(event){
+        
+        event.stopPropagation();
+        $('.services_sub_drop').toggle();
+        
+    });
+	
+	$('#industry_trigger').click( function(event){
+        
+        event.stopPropagation();
+        $('.industry_sub_drop').toggle();
+        
+    });
+	
+	$('#brands_trigger').click( function(event){
+        
+        event.stopPropagation();
+        $('.brand_sub_drop').toggle();
+        
+    });
+	
+	 $(document).click( function(){
+
+       
+		$('#drop,.services_sub_drop,industry_sub_drop,brand_sub_drop').hide();
+    });
+	
+
+});
+</script>
+
+<!--Mobile/Tab menu script end-->
+
+<!--on window scroll show start-->
+<script type="text/javascript">
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+</script>
+<!--on window scroll show end-->
+
+
+</head>
+<body>
+<main>
+ <section id="scroll_section">
+ 	<div id="scroll_content">
+        <a href="#"><img src="images/Netzealous_N.png" alt="Netzealous"/></a>
+      <nav class="scoll_menu_desktop">
+   		<ul>                                                                                
+			<li class="home"><a  href="#">Home</a></li>
+       	    <li class="about_us"><a href="#">About Us </a></li>
+  			<li class="services">
+                   <a  href="#">Services <big>&#9662;</big></a>
+                  <ul>
+                       <li><a  href="#">Web Seminar</a></li>
+                       <li><a  href="#">Seminar</a></li>
+                       <li><a  href="#">Conference</a></li>
+                       <li><a  href="#">Consulting</a></li>
+                       <li><a  href="#">Total Enterprise solutions</a></li>
+                       <li><a  href="#">Products</a></li>
+                       <li><a  href="#">Continuing Professional Education</a></li>
+                 </ul>
+          </li>
+          <li class="industry">
+          	<a  href="#">Industry <big>&#9662;</big></a>
+            <ul>
+                  <li><a  href="#">Medical devices</a></li>
+                  <li><a  href="#">Surgical Instruments</a></li>
+                  <li><a  href="#">Pharmaceuticals</a></li>
+                  <li><a  href="#">Biologics</a></li>
+                  <li><a  href="#">Healthcare</a></li>
+                  <li><a  href="#">Food and Beverages</a></li>
+                  <li><a  href="#">Software</a></li>
+                  <li><a  href="#">Embedded Technologies</a></li>
+                  <li><a  href="#">Energy and Utility</a></li>
+                  <li><a  href="#">Payment Card Industry</a></li>
+                  <li><a  href="#">Supply Chain</a></li>
+                  <li><a  href="#">Manufacturing</a></li>
+                  <li><a  href="#">Human Resources</a></li>
+             </ul>
+            
+          </li>
+          <li class="careers"><a  href="#">Careers</a></li>
+          <li class="brands">
+          	<a  href="#">Our-Brands <big>&#9662;</big></a>
+             <ul>
+                    <li class="global"><a  href="#">GlobalCompliancePanel</a></li>
+                    <li><a  href="#">TrainHR</a></li>
+                    <li><a  href="#">MentorHealth</a></li>
+                    <li><a  href="#">Compliance4All</a></li>
+                    <li><a  href="#">IT-Training Center</a></li>
+             </ul>
+          </li>
+          <li class="contact"><a  href="#">Contact</a></li>
+        </ul>
+        <!--<br class="clearfix"/>-->
+      </nav>
+        
+        
+        
+        <div class="spinner-master">
+    	  <input type="checkbox" id="spinner-form" />
+    
+          <label for="spinner-form" class="spinner-spin">
+    
+          <div class="spinner diagonal part-1"></div>
+    
+          <div class="spinner horizontal"></div>
+    
+          <div class="spinner diagonal part-2"></div>
+    
+          </label>
+        </div>
+   
+    <div class="nav_wrapper">
+    <nav id="menu" class="scroll_menu">
+		<ul class="scroll_dropdown">
+			<li class="home"><a  href="#">Home</a></li>
+          	<li class="about_us"><a  href="#">About Us </a></li>
+			<li class="services">
+                 <a  href="#">Services </a>
+                 <ul>
+                     <li><a  href="#">Web Seminar</a></li>
+                     <li><a  href="#">Seminar</a></li>
+                     <li><a  href="#">Conference</a></li>
+                     <li><a  href="#">Consulting</a></li>
+                     <li><a  href="#">Total Enterprise solutions</a></li>
+                     <li><a  href="#">Products</a></li>
+                     <li><a  href="#">Continuing Professional Education</a></li>
+                </ul>
+           </li>
+          <li class="industry">
+          		 <a  href="#">Industry</a>
+                 <ul>
+                      <li><a  href="#">Medical devices</a></li>
+                      <li><a  href="#">Surgical Instruments</a></li>
+                      <li><a  href="#">Pharmaceuticals</a></li>
+                      <li><a  href="#">Biologics</a></li>
+                      <li><a  href="#">Healthcare</a></li>
+                      <li><a  href="#">Food and Beverages</a></li>
+                      <li><a  href="#">Software</a></li>
+                      <li><a  href="#">Embedded Technologies</a></li>
+                      <li><a  href="#">Energy and Utility</a></li>
+                      <li><a  href="#">Payment Card Industry</a></li>
+                      <li><a  href="#">Supply Chain</a></li>
+                      <li><a  href="#">Manufacturing</a></li>
+                      <li><a  href="#">Human Resources</a></li>
+                </ul>
+        </li>
+        <li class="careers"><a  href="#">Careers</a></li>
+        <li class="brands">
+          	       <a  href="#">Our-Brands</a>
+                   <ul>
+                       <li><a  href="#">GlobalCompliancePanel</a></li>
+                       <li><a  href="#">TrainHR</a></li>
+                       <li><a  href="#">MentorHealth</a></li>
+                       <li><a  href="#">Compliance4All</a></li>
+                       <li><a  href="#">IT-Training Center</a></li>
+                   </ul>
+        </li>
+        <li class="contact"><a  href="#">Contact</a></li>
+	 </ul>
+  </nav>
+ </div>
+  </div>
+</section>
+<section class="top_panel">
+ <header class="header_sec">
+        	<div class="social_media">
+            	<ul>
+                	<li class="hvr-wobble-vertical"><a  href="#"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 16 16">
+<path fill="#ffffff" d="M9.5 3h2.5v-3h-2.5c-1.93 0-3.5 1.57-3.5 3.5v1.5h-2v3h2v8h3v-8h2.5l0.5-3h-3v-1.5c0-0.271 0.229-0.5 0.5-0.5z"></path>
+</svg></a></li>
+                    <li class="hvr-wobble-vertical"><a  href="#"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 16 16">
+<path fill="#ffffff" d="M16 3.538c-0.588 0.263-1.222 0.438-1.884 0.516 0.678-0.406 1.197-1.050 1.444-1.816-0.634 0.375-1.338 0.65-2.084 0.797-0.6-0.638-1.453-1.034-2.397-1.034-1.813 0-3.281 1.469-3.281 3.281 0 0.256 0.028 0.506 0.084 0.747-2.728-0.138-5.147-1.444-6.766-3.431-0.281 0.484-0.444 1.050-0.444 1.65 0 1.138 0.578 2.144 1.459 2.731-0.538-0.016-1.044-0.166-1.488-0.409 0 0.013 0 0.028 0 0.041 0 1.591 1.131 2.919 2.634 3.219-0.275 0.075-0.566 0.116-0.866 0.116-0.212 0-0.416-0.022-0.619-0.059 0.419 1.303 1.631 2.253 3.066 2.281-1.125 0.881-2.538 1.406-4.078 1.406-0.266 0-0.525-0.016-0.784-0.047 1.456 0.934 3.181 1.475 5.034 1.475 6.037 0 9.341-5.003 9.341-9.341 0-0.144-0.003-0.284-0.009-0.425 0.641-0.459 1.197-1.038 1.637-1.697z"></path>
+</svg></a></li>
+                    <li class="hvr-wobble-vertical"><a  href="#"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 16 16">
+<path fill="#ffffff" d="M6 6h2.767v1.418h0.040c0.385-0.691 1.327-1.418 2.732-1.418 2.921 0 3.461 1.818 3.461 4.183v4.817h-2.885v-4.27c0-1.018-0.021-2.329-1.5-2.329-1.502 0-1.732 1.109-1.732 2.255v4.344h-2.883v-9z"></path>
+<path fill="#ffffff" d="M1 6h3v9h-3v-9z"></path>
+<path fill="#ffffff" d="M4 3.5c0 0.828-0.672 1.5-1.5 1.5s-1.5-0.672-1.5-1.5c0-0.828 0.672-1.5 1.5-1.5s1.5 0.672 1.5 1.5z"></path>
+</svg></a></li>
+                    <li class="hvr-wobble-vertical"><a  href="#"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+<path fill="#ffffff" d="M5.091 7.147v1.747h2.888c-0.116 0.75-0.872 2.197-2.888 2.197-1.737 0-3.156-1.441-3.156-3.216s1.419-3.216 3.156-3.216c0.991 0 1.65 0.422 2.028 0.784l1.381-1.331c-0.888-0.828-2.037-1.331-3.409-1.331-2.816 0.003-5.091 2.278-5.091 5.094s2.275 5.091 5.091 5.091c2.937 0 4.888-2.066 4.888-4.975 0-0.334-0.037-0.591-0.081-0.844h-4.806z"></path>
+<path fill="#ffffff" d="M16 7h-1.5v-1.5h-1.5v1.5h-1.5v1.5h1.5v1.5h1.5v-1.5h1.5z"></path>
+</svg></a></li>
+                </ul>
+      		</div>
+            <p class="call_us"><strong>Call us at  :   +1-800-447-9407</strong></p>
+            <h1><a href="#"><img src="images/logo.png" alt="Netzealous"/></a></h1>
+            <br class="clearfix"/>
+    </header>
+      <!--<div class="banner">
+       	 <img src="images/banner_gif.gif" alt="banner" class="bounceInDown animated"/>
+    </div>-->
+      <nav class="menu">
+   		<ul>                                                                                
+			<li class="home"><a  href="#">Home</a></li>
+          <li class="about_us"><a  href="#">About Us </a></li>
+<li class="services dropdown">
+                <a  href="#">Services <big>&#9662;</big></a>
+                  <ul class="sub-menu">
+                    	<li>
+                        	<h2>Our Services</h2>
+                               <ul>
+                                    <li><a  href="#">Web Seminar</a></li>
+                                    <li><a  href="#">Seminar</a></li>
+                                    <li><a  href="#">Conference</a></li>
+                                    <li><a  href="#">Consulting</a></li>
+                                    <li><a  href="#">Total Enterprise solutions</a></li>
+                                    <li><a  href="#">Products</a></li>
+                                    <li><a  href="#">Continuing Professional Education</a></li>
+                               </ul>
+                        </li>
+                    <li><img src="images/our_services_menu.png" alt="Our Services"/></li>
+          </ul>
+          </li>
+          <li class="industry dropdown">
+          	<a  href="#">Industry <big>&#9662;</big></a>
+            <ul class="sub-menu">
+                    	<li>
+                        	<h2>Industry NetZealous offers trainings in</h2>
+                           <ul>
+                                    <li><a  href="#">Medical devices</a></li>
+                                    <li><a  href="#">Surgical Instruments</a></li>
+                                    <li><a  href="#">Pharmaceuticals</a></li>
+                                    <li><a  href="#">Biologics</a></li>
+                                    <li><a  href="#">Healthcare</a></li>
+                                    <li><a  href="#">Food and Beverages</a></li>
+                             <li><a  href="#">Software</a></li>
+                          </ul>
+                               <ul>
+                             		
+                                    <li><a  href="#">Embedded Technologies</a></li>
+                                    <li><a  href="#">Energy and Utility</a></li>
+                                    <li><a  href="#">Payment Card Industry</a></li>
+                                    <li><a  href="#">Supply Chain</a></li>
+                                    <li><a  href="#">Manufacturing</a></li>
+                                    <li><a  href="#">Human Resources</a></li>
+                               </ul>
+                        </li>
+              <li><img src="images/our_services_menu.png" alt="Our Services"/></li>
+            </ul>
+          </li>
+          <li class="careers"><a  href="#">Careers</a></li>
+          <li class="brands dropdown">
+          	<a  href="#">Our-Brands <big>&#9662;</big></a>
+             <ul class="sub-menu">
+                    	<li>
+                        	<h2>Our-Brands</h2>
+                               <ul>
+                                    <li><a  href="#">GlobalCompliancePanel</a></li>
+                                    <li><a  href="#">TrainHR</a></li>
+                                    <li><a  href="#">MentorHealth</a></li>
+                                    <li><a  href="#">Compliance4All</a></li>
+                                    <li><a  href="#">IT-Training Center</a></li>
+                               </ul>
+                        </li>
+               <li><img src="images/our_services_menu.png" alt="Our Services"/></li>
+            </ul>
+          </li>
+          <li class="contact"><a  href="#">Contact</a></li>
+        </ul>
+        <!--<br class="clearfix"/>-->
+      </nav>
+ <!--<br class="clearfix"/>-->
+ 		<!--Mobile/Tab menu start-->
+        <nav class="mobile_menu">
+             <a href="#" id="trigger">Menu <span class="icon icon-menu"></span></a>
+             <div id="drop">
+               <ul>
+                    <li class="home"><a  href="#">Home</a></li>
+                    <li class="about_us"><a  href="#">About US </a></li>
+                    <li id="service_trigger" class="services">
+                      <a  href="#">Services </a>
+                         <ul class="services_sub_drop">
+                             <li><a  href="#">Web Seminar</a></li>
+                             <li><a  href="#">Seminar</a></li>
+                             <li><a  href="#">Conference</a></li>
+                             <li><a  href="#">Consulting</a></li>
+                             <li><a  href="#">Total Enterprise solutions</a></li>
+                             <li><a  href="#">Products</a></li>
+                             <li><a  href="#">Continuing Professional Education</a></li>
+                        </ul>
+                   </li>
+                  <li id="industry_trigger" class="industry">
+                            <a  href="#">Industry</a>
+                         <ul class="industry_sub_drop">
+                              <li><a  href="#">Medical devices</a></li>
+                              <li><a  href="#">Surgical Instruments</a></li>
+                              <li><a  href="#">Pharmaceuticals</a></li>
+                              <li><a  href="#">Biologics</a></li>
+                              <li><a  href="#">Healthcare</a></li>
+                              <li><a  href="#">Food and Beverages</a></li>
+                              <li><a  href="#">Software</a></li>
+                              <li><a  href="#">Embedded Technologies</a></li>
+                              <li><a  href="#">Energy and Utility</a></li>
+                              <li><a  href="#">Payment Card Industry</a></li>
+                              <li><a  href="#">Supply Chain</a></li>
+                              <li><a  href="#">Manufacturing</a></li>
+                              <li><a  href="#">Human Resources</a></li>
+                        </ul>
+                </li>
+                <li class="careers"><a  href="#">Careers</a></li>
+                <li id="brands_trigger" class="brands">
+                            <a  href="#">Our-Brands</a>
+                           <ul class="brand_sub_drop">
+                               <li><a  href="#">GlobalCompliancePanel</a></li>
+                               <li><a  href="#">TrainHR</a></li>
+                               <li><a  href="#">MentorHealth</a></li>
+                               <li><a  href="#">Compliance4All</a></li>
+                               <li><a  href="#">IT-Training Center</a></li>
+                           </ul>
+                </li>
+                <li class="contact"><a  href="#">Contact</a></li>
+               </ul>
+             </div>
+   		</nav>
+        <!--Mobile/Tab menu end-->
+ 
+  </section>
+  <section class="mid_panel">
+     	<div class="container inner_page">
+        
+       	  <div class="breadcrumb_section offered">
+          	  <ul class="breadcrumb">
+             	<li><a href="#">Home</a></li>
+                <li>Industry</li>
+			 </ul>
+          	 <div class="page_head">
+                 <span>Netzealous Industry</span>
+                 <h2><strong>Training's </strong>Offered In</h2>
+             </div>
+          </div>
+         <!--<img src="images/about_us.jpg" alt="industry_banner" class="content_banner"/>-->
+       
+         <ul id="tab">
+                     <li class="active list">
+                            <div class="tabcordion tabs-left tabbable tabheight">
+                                <ul class="nav-tabs-sec">
+                                    <li class="first active"><a class="accordion-toggle active in" data-toggle="tab" data-target="#tabcordion-body-4">Medical devices</a></li>
+                                    <li><a class="accordion-toggle" data-toggle="tab" data-target="#tabcordion-body-5">Surgical Instruments</a></li>
+                                    <li class="disabled"><a class="accordion-toggle" data-toggle="tab" data-target="#tabcordion-body-6">Pharmaceuticals</a></li>
+                                    <li class="disabled"><a class="accordion-toggle" data-toggle="tab" data-target="#tabcordion-body-7">Biologics</a></li>
+                                    <li class="disabled"><a class="accordion-toggle" data-toggle="tab" data-target="#tabcordion-body-8">Healthcare</a></li>
+                                    <li class="disabled"><a class="accordion-toggle" data-toggle="tab" data-target="#tabcordion-body-9">Food and Beverages</a></li>
+                                    <li class="disabled"><a class="accordion-toggle" data-toggle="tab" data-target="#tabcordion-body-10">Software</a></li>
+                                    <li class="disabled"><a class="accordion-toggle" data-toggle="tab" data-target="#tabcordion-body-11">Embedded Technologies</a></li>
+                                    <li class="disabled"><a class="accordion-toggle" data-toggle="tab" data-target="#tabcordion-body-12">Energy and Utility</a></li>
+                                    <li class="disabled"><a class="accordion-toggle" data-toggle="tab" data-target="#tabcordion-body-13">Payment Card Industry</a></li>
+                                    <li class="disabled"><a class="accordion-toggle" data-toggle="tab" data-target="#tabcordion-body-14">Supply Chain</a></li>
+                                    <li class="disabled"><a class="accordion-toggle" data-toggle="tab" data-target="#tabcordion-body-15">Manufacturing</a></li>
+                                    <li class="disabled"><a class="accordion-toggle" data-toggle="tab" data-target="#tabcordion-body-16">Human Resources</a></li>
+                                    
+                                </ul>
+                                <div style="display: block;" class="tab-content-sec">
+                                	<div style="height: auto;" id="tabcordion-body-4" class="first tab-pane collapse active animated fadeInLeft">
+                                        <h3>Medical devices</h3>
+                                        <img src="images/medical_devices.png" alt="Medical devices"/>
+                                        <p>
+                                        Having started out as a training provider for this segment; NetZealous has accumulated total knowledge of the medical devices industry. With its long experience and in having several leading names in the medical devices industry on its panel, NetZealous covers all areas of medical devices comprehensively. 
+                                        </p>
+                                        <ul>
+                                       <strong>These are just some of the areas NetZealous offers trainings in:</strong>
+                                            <li class="disabled">cGMP Principles</li>
+                                            <li>Medical Device Changes and the 510(k)</li>
+                                            <li>ISO 9001</li>
+                                            <li>ISO 13485</li>
+                                            <li>ISO 14001</li>
+                                            <li>Medical Device Regulatory and Quality Requirements</li>
+                                            <li>Process Validation for Medical Devices</li>
+                                            <li>CAPA for the Medical Device Industry</li>
+                                        </ul>
+                                        <p>With our training programs on these high-specialty, finely focused areas, we help professionals get an enhanced understanding of the industry’s workings. When they get trainings from highly rated experts, professionals get to earn continuing education credits from reputable authorities/associations/organizations/institutions/bodies.</p>
+                                    </div>
+                                    <div style="height: auto;" id="tabcordion-body-5" class="disabled tab-pane collapse animated fadeInLeft">
+                                        <h3>Surgical Instruments</h3>
+                                        <img src="images/surgical_instrument.png" alt="Surgical Instruments"/>
+                                        <p>
+                                        Surgical instruments, given the nature of their use, are extremely important devices of the medical industry. That they come with the highest and most stringent quality standards goes without saying. Our in-depth experience in the medical devices industry makes us the ideal provider of trainings on any aspect of surgical instruments, which are a part of the medical device industry. Like all our other trainings, those that cover surgical instruments are also lively, convenient and of high quality. Our trainings enable you to earn CPE credits, taking you further up on your career path. 
+                                        </p>
+                                        <ul>
+                                        <strong>A few of the training courses we offer in the surgical instruments industry include:</strong>
+                                            <li class="disabled">Diagnostics Reimbursement Strategies</li>
+                                            <li>Hazard analysis with which to meet FDA and ISO13485:2003 Risk Management Requirements</li>
+                                            <li>FDA and ISO13485:2003 Risk Management Requirements</li>
+                                            <li>User Requirements Specification; Technical Design Requirements</li>
+                                            <li>Specifications, Drawings, Documents</li>
+                                            <li>Sterilization requirements</li>
+                                            <li>Traceability Matrix</li>
+                                            <li>Oral Therapies and injectables</li>
+                                            <li>Device Master Record &amp; Device History Record</li>
+                                            <li>Designing, Drafting, Writing, and Implementing the Quality Manual</li>
+                                         </ul>
+                                     </div>
+                                    <div style="height: auto;" id="tabcordion-body-6" class="disabled tab-pane collapse animated fadeInLeft">
+                                        <h3>Pharmaceuticals</h3>
+                                         <img src="images/pharmaceutical.png" alt="Pharmaceuticals"/>
+                                       <p>With our wide ranging experience of having been in the Continuing Professional Education (CPE) arena, we at NetZealous are well placed to offer immaculately designed training courses for the pharmaceutical industry. This is another of the areas in which we have our ears to the ground. We understand the workings of this industry and are well-versed with all the regulations and compliance standards that professionals in this industry have to adhere to. Our trainings, while being effective, are also interactive. Some of the segments of the pharmaceutical industry we offer trainings in:</p>
+                                       <ul>
+                                       		<li class="disabled">API</li>
+                                            <li>Biotechnology</li>
+                                            <li>Cleaning Validation</li>
+                                            <li>Clinical Trials</li>
+                                            <li>Drug Product Specifications</li>
+                                            <li>Formularies</li>
+                                            <li>Good Clinical Practices (GCPs)</li>
+                                            <li>Laboratory Safety Management</li>
+                                            <li>Life Sciences</li>
+                                            <li>Pharmaceutical Accounting</li>
+                                            <li>Pre-Clinical Development</li>
+                                            <li>Process Validation –before, during and after </li>
+                                            <li>Product Recalls</li>
+                                         </ul>
+                                    </div>
+                                    <div style="height: auto;" id="tabcordion-body-7" class="disabled tab-pane collapse animated fadeInLeft">
+                                        <h3>Biologics</h3>
+                                         <img src="images/biology.png" alt="Biologics"/>
+                                        <ul>
+                                        NetZealous has great clarity and depth of understanding of the biologics industry. Through our panel of handpicked experts who have in-depth knowledge of the happenings in the field of biologics, we equip professionals with everything that is happening in the industry. With NetZealous, professionals have the advantage of hearing experts from the comfort of where they are located. With this training, they also earn credits that put them on the higher rungs of the professional ladder. Some of the many segments of the biologics industry that we cover in our trainings: 
+                                            <li class="disabled">Handling a DEA inspection</li>
+                                            <li>Adverse event reporting in dietary supplements and OTC drugs</li>
+                                            <li>Master validation planning</li>
+                                            <li>Auditing Systems for 21CFR Part 11 Compliance</li>
+                                            <li>Implementing a Quality Systems-Based Approach to GCP Compliance</li>
+                                            <li>Outsourcing or Purchasing API or Excipients</li>
+                                            <li>Contamination Control Master Plans</li>
+                                        </ul>
+                                    </div>
+                                     <div style="height: auto;" id="tabcordion-body-8" class="disabled tab-pane collapse animated fadeInLeft">
+                                        <h3>Healthcare</h3>
+                                         <img src="images/healthcare.png" alt="Healthcare"/>
+                                        <ul>
+                                         As one of our core areas of interest and expertise, healthcare is something NetZealous can handle with utmost aplomb. With some of the best known names in the vast field of healthcare on its panel, NetZealous offers top-in-class training programs for professionals. These trainings are very convenient and come with the added benefit of earning important continuing education credits/accreditations for professionals from governing bodies/associations. A small sample of the broad areas we cover at our trainings:
+                                            <li class="disabled">Obamacare</li>
+                                            <li>HIPAA</li>
+                                            <li>HITECH</li>
+                                            <li class="disabled">Managed Care strategies</li>
+                                            <li>FMEA</li>
+                                            <li>Clinical management</li>
+                                            <li class="disabled">DEA due diligence</li>
+                                            <li>Lean and Six Sigma implementation</li>
+                                            <li>Electronic Health Records</li>
+                                            <li class="disabled">Risk Reduction/Root Cause Analysis</li>
+                                            <li>HHS compliance</li>
+                                            <li>Health Information Management</li>
+                                        </ul>
+                                    </div>
+                                     <div style="height: auto;" id="tabcordion-body-9" class="disabled tab-pane collapse animated fadeInLeft">
+                                        <h3>Food and Beverages</h3>
+                                        <img src="images/food&beverages.png" alt="Food and Beverages"/>
+                                       	<ul>
+                                        NetZealous has the experience and expertise to offer training programs that are relevant and specific to the industry. The F&B industry, being one of the important areas in which we get experts to offer trainings to professionals, is a huge, yet challenging area. With the FDA being the helmsman for every regulation in this industry, it takes a lot for players in the F&B industry to comply with standards this agency sets. With NetZealous’ training sessions, which cover all the intricate details of the compliance process, professionals in the industry are able to meet the challenges. NetZealous offers interactive, convenient training sessions from highly qualified experts in the food and beverages industry. You can earn continuing education credits from these programs. These are a few of the many areas in which we offer trainings:
+                                            <li class="disabled">International Standards such as ISO 22000 and ISO 22005</li>
+                                            <li>HACCP</li>
+                                            <li>FSSC 22000</li>
+                                            <li>Safe Quality Food 2000 Code</li>
+                                            <li>Ishikawa Cause and Effect application to food safety</li>
+                                            <li>Measurement, traceability, and data collection in a preventive rapid reporting system</li>
+                                            <li>Cycle time analysis in food safety</li>
+                                            <li>Controlling contamination caused by microbes</li>
+                                            <li>Comprehensive food safety strategy</li>
+                                            <li>Checking raw material adulteration</li>
+                                            <li>Causal analysis or prevention</li>
+                                        </ul>
+                                    </div>
+                                     <div style="height: auto;" id="tabcordion-body-10" class="disabled tab-pane collapse animated fadeInLeft">
+                                        <h3>Software</h3>
+                                        <img src="images/software.png" alt="Software"/>
+                                        <ul>
+                                        One of the ever-changing, always evolving areas of knowledge, software is used in innumerable applications. The latest challenge software poses is in cloud computing, which is in a state of transition. Add to this the arrival of social media and virtual networking, and the scenario is one of critical need for global regulation. Having said this, professionals need not get overwhelmed with these changing trends and emerging technologies. NetZealous has the expertise to offer trainings with which you professionals can steer clear of all the roadblocks, present and potential, and move ahead in the industry while ingesting the challenges and changes. With trainings that are focused on the specific area of the industry, NetZealous is your ideal training provider. You can rely on us if your training needs relate to any of these and many more:
+                                        <li class="disabled">Computer and Software Validation;</li>
+                                            <li>Quality Standards such as ISO/TS 16949:2009, QOS, ISO 14001:2004, ISO 9001:2008, APQP, etc.</li>
+                                            <li>Validation Gap Analysis;</li>
+                                            <li>Life Sciences and Commercial IT regulations;</li>
+                                            <li>Validating Spreadsheets;</li>
+                                            <li>Computer validation in the backdrop of development of cloud computing; </li>
+                                            <li>Configuration management processes for computerized systems.</li>
+                                        </ul>
+                                    </div>
+                                    <div style="height: auto;" id="tabcordion-body-11" class="disabled tab-pane collapse animated fadeInLeft">
+                                        <h3>Embedded Technologies</h3>
+                                        <img src="images/embedded_tech.png" alt="Embedded Technologies"/>
+                                        <p>
+                                       At their core, embedded technologies are capable of performing both specific and generic functions and thus perform a host of functions ranging from the small to the powerful. Their uses can be anywhere from digital watches to air traffic control. Given this nature of these technologies, it is important for businesses and professionals in this space to be equipped with the workings of embedded technologies, since it is these technologies that power these systems. This is where professionals need to have the benefit of trainings from experts in the industry. 
+                                        </p>
+                                        <ul>
+                                       NetZealous offers just this. With our in-depth knowledge of this industry, we are the ideal partner to take you up the path. While our courses impart knowledge that you need for upgrading your skills in this industry; they also earn your credits. And yes, our courses are interactive, lively and flexible. Among the comprehensive range of topics relating to embedded technologies our trainings cover, these are some: 
+                                            <li class="disabled">Dealing with obsolescence in technology</li>
+                                            <li>Cloud computing in embedded technologies</li>
+                                            <li>Understanding how change can impact your IT infrastructure</li>
+                                            <li>Enforcing coding standards</li>
+                                            <li>Software forensics for embedded systems</li>
+                                            <li>Assessing and minimizing downtime in applications</li>
+                                            <li>TCP/ IP based applications</li>
+                                            <li>Debugging on gdb debugger in Linux environment</li>
+                                            <li>Wi-Fi based applications</li>
+                                            <li>Applications on DSP</li>
+                                        </ul>
+                                    </div>
+                                    <div style="height: auto;" id="tabcordion-body-12" class="disabled tab-pane collapse animated fadeInLeft">
+                                        <h3>Energy and Utility</h3>
+                                        <img src="images/energy&utility.png" alt="Energy and Utility"/>
+                                       	<ul>
+                                        America, which consumes a quarter of the entire planet’s energy, is by far the largest consumer. The US’ dependence on energy and utility is total. With many of the energy sources being scarce, exhaustible or non-renewable, conserving energy is the biggest challenge facing this industry today, and will continue to remain so for as long as the US is energy dependent. In view of this, energy and utility have emerged as an industry whose main purpose is in evolving ways and technologies with which to conserve energy and optimize its utilization. NetZealous has the experts from whom professionals can understand all aspects of energy conservation such as Public Utilities, Electromechanical Installation and Maintenance, Residential and Commercial Energy and Utilities, and Energy and Environmental Technology. Our trainings are flexible and useful; they add value to professionals with their accreditations. These are a few of the energy and utility topics our trainings cover:
+                                            <li class="disabled">Compressed Air Assessment</li>
+                                            <li>DOE Building Technologies</li>
+                                            <li>Energy 101</li>
+                                            <li>Energy Savings Performance Contracts</li>
+                                            <li>Energy Savings Performance Contracts (ESPC)</li>
+                                            <li>Energy-Efficient Product Procurement</li>
+                                            <li>Federal Greenhouse Gas Accounting and Reporting</li>
+                                            <li>Federal Renewable Energy Goals and FEMP Services</li>
+                                            <li>Federal Renewable Energy Project Implementation</li>
+                                            <li>Renewable Energy Technologies</li>
+                                            <li>Understanding and implementation of Executive Order 13514, and many more</li>
+                                        </ul>
+                                    </div>
+                                    <div style="height: auto;" id="tabcordion-body-13" class="disabled tab-pane collapse animated fadeInLeft">
+                                        <h3>Payment Card Industry</h3>
+                                        <img src="images/card.png" alt="Payment Card"/>
+                                        <ul>
+                                       The industry that brings all cards such as ATM, debit, credit, e-purse, POS and prepaid; the payment card industry (PCI) is a very important source in which extremely huge amounts of money are traded on a day-to-day basis. In an industry in which there are millions of users, there is scope for fraud. This is why tight regulations such as PCI-Data Security Standards (DSS) are in place to check malpractices. Professionals in the industry are required to have an in-depth knowledge of the standards and how they need to be applied in their industry. NetZealous’ experts offer trainings that equip professionals tackle problems relating to the industry. Our trainings are valuable, relevant and interactive. All areas relating to the industry are covered:
+                                            <li class="disabled">PIN Transaction Security (PTS) devices and requirements</li>
+                                            <li>Payment Application Data Security Standard (PA-DSS)</li>
+                                            <li>Validated Payment Applications</li>
+                                            <li>Qualified Security Assessors (QSAs)</li>
+                                            <li>Payment Application Qualified Security Assessors (PA-QSAs)</li>
+                                            <li>Issues relating to Approved Scanning Vendors (ASVs)</li>
+                                            <li>Internal Security Assessor (ISA) education and so on.</li>
+                                         </ul>
+                                    </div>
+                                    <div style="height: auto;" id="tabcordion-body-14" class="disabled tab-pane collapse animated fadeInLeft">
+                                        <h3>Supply Chain</h3>
+                                        <img src="images/supply_chain.png" alt="Supply"/>
+                                        <ul>
+                                        One of the most important, yet often overlooked components of the food industry is supply chain. Logistics forms the backbone of the supply chain industry, and is critical in a society which depends on processed food for its lifestyle. A shocking fact about the supply chain industry underlines the extremely high importance of tracking the movement of processed food –anywhere between a third and half of all the food produced in the US is never consumed because of poor supply chain management. NetZealous helps supply chain management professionals overcome this problem by offering high standard trainings. Our experts will guide you on how to prevent pilferage in the industry. They offer trainings on all areas of the area, some of which are:
+                                            <li class="disabled">Global Positioning System (GPS) tracking</li>
+                                            <li>Global System for Mobile Communications (GSM)</li>
+                                            <li>Recycling system components (Tags, GPS, GSM, Pallets)</li>
+                                            <li>Real-time cold chain traceability</li>
+                                            <li>Weight, recycling and cleaning aspects of food safety</li>
+                                            <li>Temperature tracking sensors which communicate via radio frequency identification (RFID)</li>
+                                            <li>Intelligent routing configuration at the distribution center and during transit</li>
+                                            <li>New federal food safety law on international food safety and temperature controls</li>
+                                        </ul>
+                                    </div>
+                                    <div style="height: auto;" id="tabcordion-body-15" class="disabled tab-pane collapse animated fadeInLeft">
+                                        <h3>Manufacturing</h3>
+                                        <img src="images/manufacturing.png" alt="Manufacturing Industry"/>
+                                        <ul>
+                                        Manufacturing, being a high-precision, high-risk area, requires adherence to strict quality compliance processes and standards. Manufacturing is a broad area that covers any field from automotive to pharmaceuticals. We at NetZealous are driven by one major goal –that of providing quality training in the manufacturing industry. With our highly qualified and experienced experts, we offer interactive, pertinent and fun-to-undergo trainings into both generic and specific areas of manufacturing, such as:
+                                            <li class="disabled">Quality by Design (QbD)</li>
+                                            <li>Oversight of Raw Material and Supplier</li>
+                                            <li>Change Control</li>
+                                            <li>Multi-Channel Sampling Strategies</li>
+                                            <li>Contract Manufacturing</li>
+                                            <li>Serialization and Traceability</li>
+                                            <li>Manufacturing Best Practices</li>
+                                            <li>Clinical Performance Metrics and Benchmarking</li>
+                                            <li>Brand Protection</li>
+                                        </ul>
+                                    </div>
+                                    <div style="height: auto;" id="tabcordion-body-16" class="disabled tab-pane collapse animated fadeInLeft">
+                                        <h3>Human Resources</h3>
+                                       <img src="images/HR.png" alt="HR"/>
+                                       <ul>
+                                        An integral part of management and corporate business, Human Resources is a broad, yet specialized area in itself. HR keeps changing with the industry to which it is aligned. NetZealous understands the HR industry in all its detail, because one of our training portals, TrainHR.com, is dedicated to the human resources industry. This is a line of business that has already conducted over 500 trainings that have benefited over 15000 professionals. With experience such as this, who is better placed at resolving your HR pain areas and requirements than us? Our trainings go beyond online trainings; we offer customized HR consulting services for your specific requirements. Our trainings are from the best names in the industry. They help you get credits, apart from being fun to participate in. Just a few of the HR-related areas we offer training in:
+                                            <li class="disabled">Regulatory, Law &amp; Compliance</li>
+                                            <li>Benefits</li>
+                                            <li>Training &amp; Development</li>
+                                            <li>HR Management</li>
+                                            <li>COBRA</li>
+                                            <li>NLRB</li>
+                                            <li>Compensation, Benefits and Policy Making</li>
+                                            <li>Discrimination</li>
+                                            <li>Harassment</li>
+                                            <li>Occupational safety</li>
+                                            <li>Documentation</li>
+                                            <li>Social media in HR</li>
+                                            <li>Planning / Strategies</li>
+                                            <li>Evaluation Methods and Metrics</li>
+                                            <li>Technology in HR</li>
+                                            <li>Best Practices &amp; Innovative Methods</li>
+                                            <li>Communications and Interpersonal Skills</li>
+                                            <li>Leadership</li>
+                                            <li>Business Writing and Presentations Skills</li>
+                                            <li>Change Management</li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                             </div>
+                         </li>
+						</ul>
+         
+         
+         
+         
+                
+         </div>
+  </section>
+     
+<section class="footer_panel">
+	 <div class="empty_space"><span>&nbsp;</span></div>
+     <footer class="footer_content">
+     	
+        <div class="footer_menu  hideme">
+        	<ul class="brand_sec">
+                <li>
+                	<h3>Our brands</h3>     
+    				<ul>    
+                        <li><a href="#">GlobalCompliancePanel</a></li>
+                        <li><a href="#">TrainHR</a></li>
+                        <li><a href="#">MentorHealth</a></li>
+                        <li><a href="#">Compliance4All</a></li>
+                        <li class="no_border"><a href="#">IT Training Center</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="solutions">
+            	<li>
+                	<h3>Our solutions</h3>       
+        			<ul>    
+                        <li><a href="#">Medical devices</a></li>
+                        <li><a href="#">Surgical Instruments</a></li>
+                        <li><a href="#">Pharmaceuticals</a></li>
+                        <li><a href="#">Biologics</a></li>
+                        <li><a href="#">Healthcare</a></li>
+                        <li><a href="#">Food and Beverages</a></li>
+                        <li class="no_border"><a href="#">Software</a></li>
+                    </ul>
+                    <ul>    
+                        <li><a href="#">Embedded Technologies</a></li>
+                        <li><a href="#">Energy and Utility</a></li>
+                        <li><a href="#">Payment Card Industry</a></li>
+                        <li><a href="#">Supply Chain</a></li>
+                        <li><a href="#">Manufacturing</a></li>
+                        <li class="no_border"><a href="#">Human Resources</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="quick_links">
+            	<li>
+                	<h3>Quick links</h3>
+                    <ul>    
+                        <li><a href="#">Web Seminar</a></li>
+                        <li><a href="#">Seminar</a></li>
+                        <li><a href="#">Conference</a></li>
+                        <li><a href="#">Consulting</a></li>
+                        <li><a href="#">Total Enterprise solutions</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li class="no_border"><a href="#">Continuing Professional Education</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <aside class="hideme">
+        	<a href="#"><img src="images/netzealous_logo.png" alt="Netzealous"/></a>
+            <div class="address_sec">
+                <h4> Get in touch with us</h4>
+                <p><span class="icon_space"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 16 16">
+<path fill="#075164" d="M8 0c-2.761 0-5 2.239-5 5 0 5 5 11 5 11s5-6 5-11c0-2.761-2.239-5-5-5zM8 8c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"></path>
+</svg></span>161 Mission Falls Lane, Suite 216,Fremont,<br/>
+                CA 94539, USA<br/></p>
+                 <p><span class="icon_space"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 16 16">
+<path fill="#075164" d="M11 10c-1 1-1 2-2 2s-2-1-3-2-2-2-2-3 1-1 2-2-2-4-3-4-3 3-3 3c0 2 2.055 6.055 4 8s6 4 8 4c0 0 3-2 3-3s-3-4-4-3z"></path>
+</svg></span>+1-800-447-9407</p>
+                 <p><span class="icon_space"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 16 16">
+<path fill="#075164" d="M4 1h8v2h-8v-2z"></path>
+<path fill="#075164" d="M15 4h-14c-0.55 0-1 0.45-1 1v5c0 0.55 0.45 1 1 1h3v4h8v-4h3c0.55 0 1-0.45 1-1v-5c0-0.55-0.45-1-1-1zM2 7c-0.552 0-1-0.448-1-1s0.448-1 1-1 1 0.448 1 1-0.448 1-1 1zM11 14h-6v-5h6v5z"></path>
+</svg></span>302 288 6884</p>
+            </div>
+            <div class="location">
+						<div class="map-location">
+							<div class="pointer usa_address">
+								<span class="icon-location">
+                                	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 16 16">
+<path fill="#ffffff" d="M8 0c-2.761 0-5 2.239-5 5 0 5 5 11 5 11s5-6 5-11c0-2.761-2.239-5-5-5zM8 8c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"></path>
+</svg>
+                                
+                                </span>
+								<div class="address">
+									<ul>
+										<li>
+										  <big>NetZealous LLC</big><br/>
+											161 Mission Falls Lane, Suite 216,Fremont,
+                                           CA 94539, USA. <br/>
+											<strong>Phone : 800-447-9407</strong>
+                                        </li>
+					              </ul>
+								</div>
+							</div>
+							
+							<div class="pointer india_address">
+								<span class="icon-location">
+                                	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 16 16">
+<path fill="#ffffff" d="M8 0c-2.761 0-5 2.239-5 5 0 5 5 11 5 11s5-6 5-11c0-2.761-2.239-5-5-5zM8 8c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"></path>
+</svg>
+                                
+                                </span>
+								<div class="address">
+									<ul>
+										<li>
+											<big>NetZealous LLC</big><br/>
+											Guraraya Mansion, 3rd Floor,<br/>
+											759 to 764, 8th Main Road,<br/>
+											J.P.Nagar 2nd Phase,<br/>
+											Bangalore - 560078.
+                                            <strong>INDIA</strong>
+                                        </li>
+						             </ul>
+								</div>
+							</div>
+							
+							<div class="pointer singapore_address">
+								<span class="icon-location">
+                                	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 16 16">
+<path fill="#ffffff" d="M8 0c-2.761 0-5 2.239-5 5 0 5 5 11 5 11s5-6 5-11c0-2.761-2.239-5-5-5zM8 8c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"></path>
+</svg>
+                                
+                                </span>
+								<div class="address">
+									<ul>
+										<li>
+											<big>NetZealous LLC</big><br/>
+											C/O 1 North Bridge Road,#19-04/05<br> High Street Centre<br/>
+											Singapore - 179094
+                                         </li>
+						             </ul>
+								</div>
+							</div>
+                         </div>
+          </div>
+        </aside>
+         <footer class="copyright align-center">Copyright &copy; 2015, NetZealous, All rights reserved </footer>
+        <br class="clearfix"/>
+     </footer>
+ </section>
+</main>
+
+  
+<!--vertical tab script Start-->
+<script src="js/vertical_tab.js"></script>
+<!--vertical tab script end-->
+
+
+
+
+
+ <!--on scroll visible section start-->
+<script type="text/javascript">
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 400) {
+    $('#scroll_section').fadeIn();
+  } else {
+    $('#scroll_section').fadeOut();
+  }
+});
+</script>
+<!--on scroll visible section end-->
+<!--on scroll visible section menu start-->
+<script type="text/javascript">
+$('ul li:has(ul)').addClass('has-submenu');
+$('ul.scoll_menu_desktop li ul').addClass('sub-menu');
+$('ul.dropdown li').hover(function () {
+  $(this).addClass('hover');
+}, function () {
+  $(this).removeClass('hover');
+});
+var $menu = $('#menu'), $menulink = $('#spinner-form'), $menuTrigger = $('.has-submenu > a');
+$menulink.click(function (e) {
+  $menulink.toggleClass('active');
+  $menu.toggleClass('active');
+});
+$menuTrigger.click(function (e) {
+  e.preventDefault();
+  var t = $(this);
+  t.toggleClass('active').next('ul').toggleClass('active');
+});
+$('ul li:has(ul)');
+$(function () {
+  var e = $(document).scrollTop();
+  var t = $('.nav_wrapper').outerHeight();
+  $(window).scroll(function () {
+    var n = $(document).scrollTop();
+    if ($(document).scrollTop() >= 50) {
+        $('.nav_wrapper').css('position', 'fixed');
+    } else {
+        $('.nav_wrapper').css('position', 'fixed');
+    }
+    if (n > t) {
+        $('.nav_wrapper').addClass('scroll');
+    } else {
+        $('.nav_wrapper').removeClass('scroll');
+    }
+    if (n > e) {
+        $('.nav_wrapper').removeClass('no-scroll');
+    } else {
+        $('.nav_wrapper').addClass('no-scroll');
+    }
+    e = $(document).scrollTop();
+  });
+});
+</script>
+<!--on scroll visible section menu end-->
+
+</body>
+</html>
